@@ -1,0 +1,72 @@
+[16:47:33] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[16:47:35] [Worker-Main-2/INFO]: Loaded 7 recipes
+[16:47:37] [Server thread/INFO]: Starting minecraft server version 1.18.2
+[16:47:37] [Server thread/WARN]: ****************************
+[16:47:37] [Server thread/WARN]: YOU ARE RUNNING THIS SERVER AS AN ADMINISTRATIVE OR ROOT USER. THIS IS NOT ADVISED.
+[16:47:37] [Server thread/WARN]: YOU ARE OPENING YOURSELF UP TO POTENTIAL RISKS WHEN DOING THIS.
+[16:47:37] [Server thread/WARN]: FOR MORE INFORMATION, SEE https://madelinemiller.dev/blog/root-minecraft-server/
+[16:47:37] [Server thread/WARN]: ****************************
+[16:47:37] [Server thread/INFO]: Loading properties
+[16:47:37] [Server thread/INFO]: This server is running Paper version git-Paper-267 (MC: 1.18.2) (Implementing API version 1.18.2-R0.1-SNAPSHOT) (Git: e7d928a)
+[16:47:37] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:47:37] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:47:37] [Server console handler/ERROR]: [TerminalConsole] Failed to read console input
+java.io.IOException: Неверный дескриптор
+	at java.io.FileInputStream.readBytes(Native Method) ~[?:?]
+	at java.io.FileInputStream.read(FileInputStream.java:276) ~[?:?]
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:282) ~[?:?]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:343) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:270) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:313) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:188) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:177) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:162) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:329) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:396) ~[?:?]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:180) ~[terminalconsoleappender-1.3.0.jar:?]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:143) ~[terminalconsoleappender-1.3.0.jar:?]
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:114) ~[paper-1.18.2.jar:git-Paper-267]
+	Suppressed: java.io.IOException: Неверный дескриптор
+		at java.io.FileDescriptor.close0(Native Method) ~[?:?]
+		at java.io.FileDescriptor.close(FileDescriptor.java:297) ~[?:?]
+		at java.io.FileInputStream$1.close(FileInputStream.java:459) ~[?:?]
+		at java.io.FileDescriptor.closeAll(FileDescriptor.java:355) ~[?:?]
+		at java.io.FileInputStream.close(FileInputStream.java:457) ~[?:?]
+		at java.io.BufferedInputStream.close(BufferedInputStream.java:481) ~[?:?]
+		at sun.nio.cs.StreamDecoder.implClose(StreamDecoder.java:366) ~[?:?]
+		at sun.nio.cs.StreamDecoder.close(StreamDecoder.java:204) ~[?:?]
+		at java.io.InputStreamReader.close(InputStreamReader.java:192) ~[?:?]
+		at java.io.BufferedReader.close(BufferedReader.java:525) ~[?:?]
+		at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:183) ~[terminalconsoleappender-1.3.0.jar:?]
+		at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:143) ~[terminalconsoleappender-1.3.0.jar:?]
+		at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:114) ~[paper-1.18.2.jar:git-Paper-267]
+[16:47:37] [Server thread/INFO]: Default game type: SURVIVAL
+[16:47:37] [Server thread/INFO]: Generating keypair
+[16:47:37] [Server thread/INFO]: Starting Minecraft server on localhost:25565
+[16:47:37] [Server thread/INFO]: Using default channel type
+[16:47:37] [Server thread/INFO]: Paper: Using Java 11 compression from Velocity.
+[16:47:37] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[16:47:37] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:47:37] [Server thread/INFO]: Preparing level "world"
+[16:47:38] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[16:47:38] [Server thread/INFO]: Time elapsed: 221 ms
+[16:47:38] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[16:47:38] [Server thread/INFO]: Time elapsed: 117 ms
+[16:47:38] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[16:47:38] [Server thread/INFO]: Time elapsed: 118 ms
+[16:47:39] [Server thread/INFO]: Running delayed init tasks
+[16:47:39] [Server thread/INFO]: Done (1.965s)! For help, type "help"
+[16:47:39] [Server thread/INFO]: Timings Reset
+[16:47:56] [Server thread/INFO]: Stopping server
+[16:47:56] [Server thread/INFO]: Saving players
+[16:47:56] [Server thread/INFO]: Saving worlds
+[16:47:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[16:47:59] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[16:47:59] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[16:47:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[16:47:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16:47:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16:47:59] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[16:47:59] [Server thread/INFO]: Flushing Chunk IO
+[16:47:59] [Server thread/INFO]: Closing Thread Pool
+[16:47:59] [Server thread/INFO]: Closing Server
