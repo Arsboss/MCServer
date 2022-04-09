@@ -1,1 +1,1 @@
-java -Xms512M -Xmx720M -jar server.jar
+java -Xms512M -Xmx1G -jar server.jar
